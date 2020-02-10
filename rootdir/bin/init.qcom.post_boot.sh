@@ -438,17 +438,6 @@ function configure_memplus_parameters() {
             ;;
         *)
             rm /data/vendor/swap/swapfile
-            # enable swapspace
-            if [ -f /data/vendor/swap/swapfile ]; then
-                mkswap /data/vendor/swap/swapfile
-                swapon /data/vendor/swap/swapfile
-
-                # raise the bar from 200,600,800 -> 600,750,850
-                # echo "18432,23040,27648,150256,187296,217600" > /sys/module/lowmemorykiller/parameters/minfree
-                if [ $? -eq 0 ]; then
-                    echo 1 > /sys/module/memplus_core/parameters/memory_plus_enabled
-                fi
-            fi
             # reset zram swapspace
             swapoff /dev/block/zram0
             echo 1 > /sys/block/zram0/reset
@@ -457,7 +446,7 @@ function configure_memplus_parameters() {
             mkswap /dev/block/zram0
             swapon /dev/block/zram0 -p 32758
             if [ $? -eq 0 ]; then
-                echo 1 > /proc/sys/vm/memory_plus
+                echo 1 > /sys/module/memplus_core/parameters/memory_plus_enabled
             fi
             ;;
     esac

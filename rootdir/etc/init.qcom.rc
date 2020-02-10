@@ -640,10 +640,6 @@ service vendor.qmuxd /system/vendor/bin/qmuxd
     group radio audio bluetooth gps nfc diag
     disabled
 
-service vendor.netmgrd /system/vendor/bin/netmgrd
-    class main
-    disabled
-
 service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
     class main
     user radio

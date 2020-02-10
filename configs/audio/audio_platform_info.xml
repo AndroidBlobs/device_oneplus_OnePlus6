@@ -45,6 +45,10 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="147"/>
+        <!-- #ifdef VENDOR_EDIT -->
+        <!-- aditya.gunda@Multimedia, 2019/10/16, EIDQ-5951, fix low volume issue -->
+        <device name="SND_DEVICE_IN_HANDSET_MIC_REC_SINGLE" acdb_id="4"/>
+        <!-- #endif -->
     </acdb_ids>
 
     <module_ids>

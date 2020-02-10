@@ -51,6 +51,9 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Alarm
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+-vendor/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.odex
+-vendor/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.vdex
+-vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -1242,7 +1245,6 @@ vendor/overlay/oneplus_basiccolor_white_telecom/white_telecom.apk
 vendor/overlay/oneplus_basiccolor_white_wifiapsettings/white_wifiapsettings.apk
 vendor/overlay/oneplus_black_OneplusAccount/com.oneplus.account.apk
 vendor/overlay/oneplus_black_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_black_OPCardpackage/com.oneplus.card.apk
 vendor/overlay/oneplus_black_OPFilemanager/com.oneplus.filemanager.apk
 vendor/overlay/oneplus_black_OPNote/com.oneplus.note.apk
 vendor/overlay/oneplus_black_OPScreenRecord/com.oneplus.screenrecord.apk
@@ -1255,7 +1257,6 @@ vendor/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk
 vendor/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk
 vendor/overlay/oneplus_white_OneplusAccount/com.oneplus.account.apk
 vendor/overlay/oneplus_white_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_white_OPCardpackage/com.oneplus.card.apk
 vendor/overlay/oneplus_white_OPFilemanager/com.oneplus.filemanager.apk
 vendor/overlay/oneplus_white_OPNote/com.oneplus.note.apk
 vendor/overlay/oneplus_white_OPScreenRecord/com.oneplus.screenrecord.apk
