@@ -1166,7 +1166,7 @@
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
         <string-array name="apn_hide_rule_strings_array" num="2">
             <item value="type" />
-            <item value="supl,ims" />
+            <item value="supl" />
         </string-array>
         <map name="apn_default_values_strings_array">
             <string name="protocol">IPV4V6</string>
